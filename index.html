@@ -190,12 +190,14 @@
         }
 
         #problem { background: linear-gradient(135deg, #FFE4D6 0%, #FFDAB9 100%); }
+        #counterargument { background: linear-gradient(135deg, #FFF9E6 0%, #FFE4B5 100%); }
         #brain-power { background: linear-gradient(135deg, #FFFACD 0%, #FFE4B5 100%); }
         #teamwork { background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); }
         #quiz { background: linear-gradient(135deg, #FFF9C4 0%, #FFF59D 100%); }
         #careers { background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); }
         #creativity-game { background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%); }
         #superpower { background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); }
+        #references { background: linear-gradient(135deg, #F5F5F5 0%, #EEEEEE 100%); }
 
         h2 {
             font-size: 56px;
@@ -618,6 +620,36 @@
             font-weight: bold;
         }
 
+        /* ===== AUTHOR & REFERENCES ===== */
+        .author-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .author-name {
+            font-size: 24px;
+            color: #FF1493;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .reference-item {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .hero h1 { font-size: 48px; }
@@ -671,6 +703,31 @@
                     <p style="font-size: 22px; margin-top: 20px;">Art actually helps you become SMARTER and HAPPIER!</p>
                     <p style="font-size: 20px; margin-top: 15px;">Let's discover why together! 🚀</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTERARGUMENT SECTION -->
+    <section id="counterargument">
+        <div class="section-content">
+            <h2>🤔 But Wait... What About the Other Side?</h2>
+            <div style="text-align: center; font-size: 22px; color: #333; line-height: 1.8; max-width: 900px; margin: 0 auto;">
+                <div style="font-size: 80px; margin: 20px 0;">⚖️</div>
+                <p style="margin: 20px 0; font-weight: bold; color: #E67E22;">Some people say:</p>
+                <div style="background: rgba(230, 126, 34, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0;">
+                    <p style="margin: 15px 0;">💰 "Schools don't have enough money for art supplies"</p>
+                    <p style="margin: 15px 0;">📝 "We need to focus on reading and math tests"</p>
+                    <p style="margin: 15px 0;">💼 "There aren't many art jobs available"</p>
+                </div>
+                
+                <div style="margin: 50px 0; padding: 30px; background: rgba(52, 152, 219, 0.2); border-radius: 20px;">
+                    <p style="font-size: 26px; color: #2980B9; font-weight: bold;">💡 HERE'S THE TRUTH!</p>
+                    <p style="font-size: 20px; margin-top: 20px;"><strong>Art helps with ALL subjects!</strong> Kids who do art get better at reading AND math!</p>
+                    <p style="font-size: 20px; margin-top: 15px;"><strong>Art skills work EVERYWHERE!</strong> Even doctors, scientists, and engineers use creativity every day!</p>
+                    <p style="font-size: 20px; margin-top: 15px;"><strong>Art makes school FUN!</strong> Students who take art classes come to school more and feel happier!</p>
+                </div>
+
+                <p style="font-size: 22px; margin-top: 30px; font-weight: bold; color: #27AE60;">So even though some people worry about art in schools, research shows that art makes EVERYTHING better! 🌟</p>
             </div>
         </div>
     </section>
@@ -895,6 +952,45 @@
                     🏆 Skills Collected: <strong><span id="finalCollected">0</span>/6</strong><br>
                     🎯 Quiz Score: <strong><span id="quizScore">0</span>%</strong>
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFERENCES SECTION -->
+    <section id="references">
+        <div class="section-content">
+            <h2>📚 References & Resources</h2>
+            <h3>Want to learn more? Here are the sources!</h3>
+            
+            <div class="reference-item">
+                <strong>1.</strong> National Endowment for the Arts. (2025). "Educating Ourselves about Childhood Arts Experiences—and Why They Matter." Research shows arts participation is linked to better academic outcomes and social-emotional development.
+            </div>
+
+            <div class="reference-item">
+                <strong>2.</strong> University of Florida Arts Education Masters Program. (2025). "Importance of Art Education in the Classroom." Studies show art education lowers stress, improves memory, and helps students feel more socially connected.
+            </div>
+
+            <div class="reference-item">
+                <strong>3.</strong> Johns Hopkins University School of Education. "How Arts Education Benefits Students." Research found students in arts programs achieved higher grades in language arts and math, with overall GPA improvements.
+            </div>
+
+            <div class="reference-item">
+                <strong>4.</strong> Bowen, D. H., & Kisida, B. University of Missouri & Texas A&M. "The Value of Arts Education." Studies demonstrate that arts education enhances learning across all subjects and develops critical thinking skills.
+            </div>
+
+            <div class="reference-item">
+                <strong>5.</strong> Collaborative for Academic, Social and Emotional Learning (CASEL). "Arts and Social-Emotional Learning." The arts help students develop problem-solving skills, work together, and build empathy for others.
+            </div>
+
+            <div class="reference-item">
+                <strong>6.</strong> Wallace Foundation. (2025). "More Arts = More Benefits for Kids." Recent research shows arts education boosts writing skills, builds social and emotional skills, and increases school engagement.
+            </div>
+
+            <div class="author-section">
+                <div style="font-size: 60px;">✍️</div>
+                <p style="font-size: 20px; color: #666; margin: 10px 0;">Written by</p>
+                <div class="author-name">Charlie Zhang</div>
+                <p style="font-size: 16px; color: #999; margin-top: 10px;">Arts Education Advocate</p>
             </div>
         </div>
     </section>
@@ -1199,4 +1295,3 @@
     </script>
 </body>
 </html>
-
