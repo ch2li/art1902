@@ -410,6 +410,88 @@
             transform: translateY(-5px);
         }
 
+        /* ===== COUNTER ARGUMENT SECTION ===== */
+        .counter-section {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+            padding: 80px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .counter-section::before {
+            content: '🤔';
+            position: absolute;
+            font-size: 400px;
+            opacity: 0.08;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .counter-box {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border: 5px solid #FF6B6B;
+            position: relative;
+        }
+
+        .counter-box h3 {
+            font-size: 32px;
+            color: #FF6B6B;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .counter-argument {
+            background: linear-gradient(135deg, #fff5f5, #fffef7);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 8px solid #FF6B6B;
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .counter-argument strong {
+            color: #FF6B6B;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .counter-response {
+            background: linear-gradient(135deg, #e8f8f5, #f0fffe);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 8px solid #27AE60;
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .counter-response strong {
+            color: #27AE60;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .counter-pair {
+            margin-bottom: 40px;
+        }
+
+        .debate-icon {
+            font-size: 50px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
         /* ===== DRAWING CANVAS ===== */
         .drawing-section {
             background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
@@ -812,6 +894,7 @@
         <a href="#welcome">🏠 Start</a>
         <a href="#thesis">💡 Big Idea</a>
         <a href="#problem">🎨 The Challenge</a>
+        <a href="#counter">🤔 But Some Say...</a>
         <a href="#brain">🧠 Brain Power</a>
         <a href="#friends">👥 Making Friends</a>
         <a href="#cultures">🌍 World Cultures</a>
@@ -860,6 +943,40 @@
                     <p style="font-size: 28px; color: #27AE60; font-weight: bold;">✨ BUT HERE'S THE AMAZING NEWS! ✨</p>
                     <p style="font-size: 22px; margin-top: 20px;">Art actually helps you become SMARTER and HAPPIER!</p>
                     <p style="font-size: 20px; margin-top: 15px;">Let's discover why together! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Argument Section -->
+    <section class="counter-section" id="counter">
+        <div class="section-content">
+            <h2>🤔 But Some Say...</h2>
+            <div class="counter-box">
+                <h3>The Other Side of the Argument</h3>
+                <p style="text-align: center; font-size: 20px; color: #666; margin-bottom: 40px;">
+                    Some people have different ideas about arts education. Let's see what they think and why they're wrong! 💪
+                </p>
+
+                <div class="counter-pair">
+                    <div class="debate-icon">😟 vs ✨</div>
+                    <div class="counter-argument">
+                        <strong>The Argument They Make:</strong>
+                        Schools have limited time and money, so they should focus ONLY on core subjects like reading, writing, and math. They think arts programs are luxuries we can't afford when students struggle with basic skills.
+                    </div>
+                    <div class="counter-response">
+                        <strong>✨ Here's Why They're Wrong!</strong>
+                        Art doesn't compete with other subjects—it HELPS them! Students who do art actually write 13% BETTER and become smarter at math! Plus, Houston showed we can teach arts for only $14.67 per student per year—that's cheaper than a movie ticket! 🎬 It's not a luxury, it's an investment in success!
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #fff5f5, #f0fffe); border-radius: 20px; border: 3px solid #27AE60;">
+                    <p style="font-size: 26px; color: #27AE60; font-weight: bold; margin-bottom: 15px;">🎯 The Real Truth!</p>
+                    <p style="font-size: 18px; color: #333; line-height: 1.8;">
+                        Arts education isn't taking away from regular subjects—it's making them BETTER! <br>
+                        When you do art, your brain gets stronger in ways that help you with EVERYTHING else. <br>
+                        It's like doing warm-ups before sports—you perform better in the main game! 🏃‍♂️
+                    </p>
                 </div>
             </div>
         </div>
@@ -1649,8 +1766,9 @@
         }
 
         // ===== SCROLL TRACKING =====
-        const sections = ['thesis', 'problem', 'brain', 'friends', 'cultures', 'careers', 'drawing', 'quiz'];
+        const sections = ['thesis', 'problem', 'counter', 'brain', 'friends', 'cultures', 'careers', 'drawing', 'quiz'];
         const sectionAchievements = {
+            counter: ['🤔', 'Critical Thinker!', 'counter'],
             brain: ['🧠', 'Brain Explorer!', 'brain'],
             friends: ['👥', 'Friend Maker!', 'friends'],
             cultures: ['🌍', 'World Traveler!', 'cultures'],
